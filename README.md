@@ -1,0 +1,2 @@
+Frontend development of Saas Landing Page using React.js and Tailwindcss (Vite + React)
+Link to view figma UI design: https://www.figma.com/design/lqtYo1uf0bk1BAQ0oRdcp8/Saas-Landing-Pages-(Community)?node-id=0-1&p=f&t=NdDRZI4WyFiIbhsJ-0
