@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 assets
 lib
-*.js
-*.cjs
+
