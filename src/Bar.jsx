@@ -38,7 +38,7 @@ const DropdownMenu = () => {
 
       {/* Dropdown links */}
       {isOpen &&  (
-        <div className="fixed top-12 left-0 w-full border-t bg-[#54BD95] shadow-lg h-[50] mt-4">
+        <div className="fixed top-12 left-0 w-full border-t bg-[#54BD95] shadow-lg h-full mt-4">
           <ul className="flex flex-col items-center py-4 text-gray-700 w-full">
             <li className="text-center">
               <a
