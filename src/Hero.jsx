@@ -8,7 +8,7 @@ export default function Main() {
  
   return (
     <>
-    <div className="mb-10  md:mx-10 md:mb-30  p-4 rounded-lg flex items-center justify-between ">
+    <div className=" mb-10  md:mx-10 md:mb-30 py-4 md:p-4 rounded-lg flex items-center justify-between">
     <Logo />
     <Navbar/>
     <DropdownMenu/>
