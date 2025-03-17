@@ -8,7 +8,7 @@ export default function Pricing() {
           Choose plan
         </h2>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-          That’s Right For You
+          That&apos;s Right For You
         </h2>
         <p className="text-gray-600 mb-6">
           Choose plan that works best for you, feel free to contact us
@@ -32,7 +32,7 @@ export default function Pricing() {
             <p className="text-[#A6A6A6] text-[27px] leading-[27px] font-[500] mb-4">
               Have a go and test your superpowers
             </p>
-            <p className="text-4xl font-bold mb-20">$0</p>
+            <p className="text-4xl font-bold mb-20"><sup className="text-[#54BD95]">$</sup>0</p>
             <div>
             <ul className="text-gray-600 mb-20 space-y-8">
               {[
@@ -58,7 +58,7 @@ export default function Pricing() {
           <div className="bg-[#54BD95] text-white shadow-md rounded-xl p-6 text-center relative">
             <h3 className="text-[30px] font-[Inter] font-[600] leading-[36px] text-[#FFFFFF] mb-2">Pro</h3>
             <p className="mb-4 font-[Inter] font-[500] text-[18px] leading-[27px]">Experiment the power of infinite possibilities</p>
-            <p className="text-4xl font-bold mb-4">$8</p>
+            <p className="text-4xl font-bold mb-4"><sup className="text-white">$</sup>8</p>
             <div className="bg-[#85DAB9] text-[14px] leading-[30px] font-[600] font-[Inter] py-1 px-2 rounded-[10px] mb-4 inline-block">
               Save $50 a year
             </div>
@@ -71,13 +71,13 @@ export default function Pricing() {
                 "Folders and collaboration",
                 "All incoming apps",
               ].map((item, index) => (
-                <li key={index} className="flex items-start text-[#191A15] font-[500] font-[Inter] text-[18px] leading-[30px]">
+                <li key={index} className="flex items-start text-left text-[#191A15] font-[500] font-[Inter] text-[18px] leading-[30px]">
                   <Check className="bg-[#54BD95] mr-2 rounded-xl text-[10px] text-gray-100" />
                   {item}
                 </li>
               ))}
             </ul>
-            <button className="bg-[#54BD95] w-[260px] h-[64px] py-2 px-4 rounded-[20px] font-[Inter] font-[600] text-[16px] shadow-md ">
+            <button className="bg-[#54BD95] w-full h-[64px] py-2 px-4 rounded-[20px] font-[Inter] font-[600] text-[16px] shadow-md ">
               Go to pro
             </button>
             </div>
@@ -91,7 +91,7 @@ export default function Pricing() {
             <p className="text-[#A6A6A6] text-[18px] leading-[27px] font-[500] mb-4">
               Unveil new superpowers and join the Design League
             </p>
-            <p className="text-4xl font-bold mb-20">$16</p>
+            <p className="text-4xl font-bold mb-20"><sup className="text-[#54BD95]">$</sup>16</p>
               <div>
             <ul className="text-gray-600 mb-20 space-y-8">
               {[
@@ -101,7 +101,7 @@ export default function Pricing() {
                 "Co-conception program",
                 "Collaboration-Soon",
               ].map((item, index) => (
-                <li key={index} className="flex items-start text-[#191A15] font-[500] font-[Inter] text-[18px] leading-[30px]">
+                <li key={index} className="flex items-start text-left text-[#191A15] font-[500] font-[Inter] text-[18px] leading-[30px]">
                   <Check className="bg-[#54BD95] mr-2 rounded-xl text-[10px] text-gray-100" />
                   {item}
                 </li>

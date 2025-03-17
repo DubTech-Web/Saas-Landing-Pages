@@ -3,7 +3,7 @@ export default function Benefit() {
     return (
       <section className=" py-12 px-6 grid grid-cols-1 md:grid-cols-2 gap-12 mt-50 bg-gradient-to-r from-pink-50 from-0% via-[#F9F9F9] to-green-50 to-90%   ">
         {/* Left Side */}
-        <div className="pr-19 mx-7">
+        <div className="md:pr-19 mx-7">
           <h2 className="text-3xl md:text-[50px] font-[700] font-[Inter] text-[#191A15] mb-6">
             What Benefit Will You Get
           </h2>
@@ -15,8 +15,8 @@ export default function Benefit() {
               "Saving Money For The Future",
               "Online Transaction",
             ].map((benefit, index) => (
-              <li key={index} className="flex items-center text-lg text-gray-700">
-                <Check className="text-white mr-2 bg-[#54BD95] rounded-full" />
+              <li key={index} className="flex items-center text-lg text-gray-700 ">
+                <Check className="text-white bg-[#54BD95] rounded-full mr-6 " />
                 {benefit}
               </li>
             ))}
@@ -46,7 +46,7 @@ export default function Benefit() {
             <img src="src/assets/images/Group 109.png" alt="" />
           </div>
   
-          <div className="absolute right-[-20px] sm:absolute top-20 right-12 bg-white py-2 px-4 rounded-lg shadow-md text-gray-800">
+          <div className="absolute right-[-20px] sm:absolute top-20 sm:right-12 bg-white py-2 px-4 rounded-lg shadow-md text-gray-800">
             <div className="inline-block">
             <p className="text-sm">Total Income</p>
             <p className="font-bold">$245.00</p>
@@ -54,7 +54,7 @@ export default function Benefit() {
             <img className="inline" src="src/assets/images/bar-chart-2 1.png" alt="" />
           </div>
          
-            <div className="absolute top-[200px] sm:absolute top-70 left-0">
+            <div className="absolute top-[200px] sm:absolute sm:top-70 left-0">
               <img src="src/assets/images/Group 113.png" alt="" />
             </div>
 

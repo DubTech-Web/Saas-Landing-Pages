@@ -38,12 +38,12 @@ const DropdownMenu = () => {
 
       {/* Dropdown links */}
       {isOpen &&  (
-        <div className="fixed top-12 left-0 w-full border-t bg-[#54BD95] shadow-lg mt-2">
-          <ul className="flex flex-col items-center py-4 text-gray-700">
-            <li className="w-full text-center">
+        <div className="fixed top-12 left-0 w-full border-t bg-[#54BD95] shadow-lg h-full mt-2">
+          <ul className="flex flex-col items-center py-4 text-gray-700 w-full">
+            <li className="text-center">
               <a
                 href="#home"
-                className="block py-2 hover:bg-gray-100 w-full"
+                className="block py-2 hover:bg-gray-100 "
                 onClick={() => setIsOpen(false)}  // Close dropdown on click
               >
                 Home
@@ -51,7 +51,7 @@ const DropdownMenu = () => {
             </li>
             <li>
               <a
-                href="#about"
+                href="#product"
                 className="block px-4 py-2 hover:bg-gray-100"
                 onClick={() => setIsOpen(false)}
               >
@@ -60,7 +60,7 @@ const DropdownMenu = () => {
             </li>
             <li>
               <a
-                href="#contact"
+                href="#faq"
                 className="block px-4 py-2 hover:bg-gray-100"
                 onClick={() => setIsOpen(false)}
               >
@@ -69,7 +69,7 @@ const DropdownMenu = () => {
             </li>
             <li>
               <a
-                href="#contact"
+                href="#blog"
                 className="block px-4 py-2 hover:bg-gray-100"
                 onClick={() => setIsOpen(false)}
               >
@@ -78,7 +78,7 @@ const DropdownMenu = () => {
             </li>
             <li>
               <a
-                href="#contact"
+                href="#aboutus"
                 className="block px-4 py-2 hover:bg-gray-100"
                 onClick={() => setIsOpen(false)}
               >

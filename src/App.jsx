@@ -26,11 +26,7 @@ function App() {
   
 }
 
- {/* <div className="md:mx-10 mb-30 mt-4 p-4 rounded-lg flex items-center justify-between ">
-        <Logo />
-        <NavBar />
-        <Buttons />
-      </div> */}
+ 
 
 
 export default App;

@@ -2,21 +2,24 @@ import Logo from "./Logo";
 import Navbar from "./NavBar";
 import Buttons from "./Buttons";
 import DropdownMenu from "./Bar";
+
+
 export default function Main() {
  
   return (
     <>
-    <div className="md:mx-10 mb-30  p-4 rounded-lg flex items-center justify-between ">
+    <div className="mb-10  md:mx-10 md:mb-30  p-4 rounded-lg flex items-center justify-between ">
     <Logo />
     <Navbar/>
     <DropdownMenu/>
     <Buttons/>
+    {/* text-4xl text-left  sm:text-[80px] font-[700] font-[Inter] text-[#191A15] */}
     
     </div>
     <div className="mx-7 mb-20">
       <div className="md:grid grid-cols-2">
-        <div className="sm:mb-12 p-4 leading-[30px]">
-          <h2 className="text-4xl text-left  sm:text-[80px] font-[700] font-[Inter] text-[#191A15]">
+        <div className="sm:mb-12 p-4">
+          <h2 className="text-5xl  sm:text-left md: font-[700] text-[#191A15]">
             We&apos;re here to Increase your Productivity
           </h2>
           <br />

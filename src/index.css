@@ -6,6 +6,9 @@
 @import "tailwindcss/utilities";
 
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 :root {
