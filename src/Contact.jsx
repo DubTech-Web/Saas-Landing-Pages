@@ -12,7 +12,7 @@ export default function Contact() {
               Everything you need to accept payment and grow your money anywhere
               on planet
             </p>
-            <img className="mb-10" src="src/assets/images/Group 212.png" alt="" />
+            <img className="mb-10" src="/assets/images/Group 212.png" alt="" />
               <p className="font-[Inter] text-[#A6A6A6] font-[500] text-[18px] mb-6">
                 I am very helped by this E-wallet application, my days are very
                 easy to use this application and it&apos;s very helpful in my life,
@@ -21,7 +21,7 @@ export default function Contact() {
               <cite className="text-[#A6A6A6] font-[Inter] font-[500] text-[18px] leading-[30px] mb-6">_ Aria Zinanrio</cite>
               
             <div className="grid grid-cols-3 space-y-4 md:flex items-center space-x-4 mt-4">
-              {["src/assets/images/Ellipse 54.png", "src/assets/images/Ellipse 55.png", "src/assets/images/Ellipse 56.png","src/assets/images/Ellipse 33.png", 'src/assets/images/Group 215.png'].map(
+              {["/assets/images/Ellipse 54.png", "/assets/images/Ellipse 55.png", "/assets/images/Ellipse 56.png","/assets/images/Ellipse 33.png", '/assets/images/Group 215.png'].map(
                 (src, index) => (
                   <img
                     key={index}
@@ -38,7 +38,7 @@ export default function Contact() {
           <div className="bg-gray-800 rounded-xl p-8 shadow-md w-full m-auto">
             <div className="flex flex-col items-center mb-6">
               <img
-                src="src/assets/images/Group.png"
+                src="/assets/images/Group.png"
                 alt="Coin Icon"
                 className="w-[72px] h-[86px] mb-2"
               />

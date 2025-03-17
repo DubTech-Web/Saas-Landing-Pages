@@ -27,7 +27,7 @@ export default function Benefit() {
         <div className="relative">
           {/* Background Image */}
           <img
-            src="src/assets/images/Rectangle 48.png"
+            src="/assets/images/Rectangle 48.png"
             alt="Laptop"
             className="w-9/12 sm:w-auto rounded-xl shadow-lg m-auto"
           />
@@ -35,7 +35,7 @@ export default function Benefit() {
           {/* Floating Cards */}
           <div className="absolute  sm:absolute top-4  bg-white p-3 rounded-lg shadow-md flex items-center space-x-2">
             <img
-              src="src/assets/images/Ellipse 33.png "
+              src="/assets/images/Ellipse 33.png "
               alt="Profile"
               className="w-10 h-10 rounded-full object-cover"
             />
@@ -43,7 +43,7 @@ export default function Benefit() {
               <p className="font-semibold">Amanda Young</p>
               <p className="text-sm text-gray-500">Expert Saving Money</p>
             </div>
-            <img src="src/assets/images/Group 109.png" alt="" />
+            <img src="/assets/images/Group 109.png" alt="" />
           </div>
   
           <div className="absolute right-[-20px] sm:absolute top-20 sm:right-12 bg-white py-2 px-4 rounded-lg shadow-md text-gray-800">
@@ -51,11 +51,11 @@ export default function Benefit() {
             <p className="text-sm">Total Income</p>
             <p className="font-bold">$245.00</p>
             </div>
-            <img className="inline" src="src/assets/images/bar-chart-2 1.png" alt="" />
+            <img className="inline" src="/assets/images/bar-chart-2 1.png" alt="" />
           </div>
          
             <div className="absolute top-[200px] sm:absolute sm:top-70 left-0">
-              <img src="src/assets/images/Group 113.png" alt="" />
+              <img src="/assets/images/Group 113.png" alt="" />
             </div>
 
           <div className="absolute bottom-[-30px] left-4 h-20 bg-white py-2 px-4 rounded-lg shadow-md flex items-center space-x-2">

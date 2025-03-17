@@ -3,17 +3,17 @@ export default function Features() {
     {
       title: "Collaboration Teams",
       description: "Here you can handle projects together with team virtually",
-      image: "src/assets/images/Frame 247.png", // Replace with actual image path
+      image: "/assets/images/Frame 247.png", // Replace with actual image path
     },
     {
       title: "Cloud Storage",
       description: "No need to worry about storage because we provide storage up to 2 TB",
-      image: "src/assets/images/Group 183.png",
+      image: "/assets/images/Group 183.png",
     },
     {
       title: "Daily Analytics",
       description: "We always provide useful information to make it easier for you every day",
-      image: "src/assets/images/Frame 54.png",
+      image: "/assets/images/Frame 54.png",
     },
   ];
   return (
