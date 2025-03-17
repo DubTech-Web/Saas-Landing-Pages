@@ -13,7 +13,7 @@ export default function Main() {
     <Navbar/>
     <DropdownMenu/>
     <Buttons/>
-    {/* text-4xl text-left  sm:text-[80px] font-[700] font-[Inter] text-[#191A15] */}
+    
     
     </div>
     <div className="mx-7 mb-20">
