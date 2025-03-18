@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <DropdownMenu />
         
-        <div className="flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1">
+        <div className="md:flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1 hidden">
           <button>Login</button>
           <button className="p-2  font-[Inter] font-[500] text-[16px]  bg-[#54BD95] text-[#F8F8FA] rounded-lg hover:bg-green-600">SignUp</button>
         </div>

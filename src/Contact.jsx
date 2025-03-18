@@ -77,7 +77,7 @@ export default function Contact() {
   
         {/* Footer */}
         <footer className="py-8 mt-12 border-t border-gray-800">
-          <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+          <div className="md:max-w-7xl md:mx-auto md:px-6 grid md:grid-cols-2 gap-12">
             {/* Footer Left */}
             <div>
               <h4 className="text-[#54BD95] text-[50px] font-[600] leading[30px] mb-2">Biccas</h4>
@@ -127,10 +127,10 @@ export default function Contact() {
           </div>
   
               
-          <p className="mx-7 md:mt-8">
+          <p className=" md:mt-8">
             © 2022 Biccas Inc. Copyright and rights reserved | 
           </p>
-          <p className=" mx-7 md:text-right">Terms and Conditions - Privacy Policy</p>
+          <p className="  md:text-right">Terms and Conditions - Privacy Policy</p>
         </footer>
       </section>
     );

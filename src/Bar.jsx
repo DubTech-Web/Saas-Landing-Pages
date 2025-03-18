@@ -28,17 +28,17 @@ const DropdownMenu = () => {
   }, []);
 
   return (
-    <div className="relative md:hidden sm:hidden left-7 sm:left-4" ref={dropdownRef}>
+    <div className="absolute md:hidden right-0 " ref={dropdownRef}>
       {/* Button to open dropdown */}
       <button
         onClick={toggleDropdown}
-        className="px-4 py-2"
-      > {isOpen ? <X className="text-black"/> : <Menu className="text-black " />}
+        className="px-2 py-1 mr-2  bg-[#54BD95] rounded-md shadow-md cursor-pointer"
+      > {isOpen ? <X className="text-black"/> : <Menu className="text-gray-600 hover:text-white" />}
       </button>
 
       {/* Dropdown links */}
       {isOpen &&  (
-        <div className="fixed top-12 left-0 w-full border-t bg-[#54BD95] shadow-lg h-70 mt-4">
+        <div className="fixed top-12 left-0 w-full border-t bg-[#54BD95] shadow-lg h-fit mt-4">
           <ul className="flex flex-col items-center py-4 text-gray-700 w-full">
             <li className="text-center">
               <a
@@ -84,7 +84,9 @@ const DropdownMenu = () => {
               >
                 AboutUs
               </a>
-            </li>             
+            </li> 
+            <button className="text-white">Login</button> 
+            <button className="p-2  font-[Inter] font-[500] text-[16px] shadow-md  bg-[#033826] text-[#F8F8FA] rounded-lg hover:bg-green-600">SignUp</button>           
           </ul>
         </div>
       )}
