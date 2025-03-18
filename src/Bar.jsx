@@ -28,7 +28,7 @@ const DropdownMenu = () => {
   }, []);
 
   return (
-    <div className="relative md:hidden sm:hidden left-10 sm:left-5" ref={dropdownRef}>
+    <div className="relative md:hidden sm:hidden left-7 sm:left-4" ref={dropdownRef}>
       {/* Button to open dropdown */}
       <button
         onClick={toggleDropdown}
