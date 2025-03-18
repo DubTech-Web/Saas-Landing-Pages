@@ -90,14 +90,14 @@ export default function Contact() {
                   placeholder="Enter your email here"
                   className="py-2 px-4 focus:outline-none flex-1"
                 />
-                <button type="submit" className="bg-[#A6A6A6] ml-8 mt-1 sm:bg-[#A6A6A6] rounded-full p-3 mr-1">
+                <button type="submit" className="bg-[#A6A6A6] md:ml-8 md:mt-1 flex items-end rounded-full p-3 mr-1">
                   <ArrowRight className="text-white text" />
                 </button>
               </div>
             </div>
   
             {/* Footer Center */}
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
             <div>
               <h5 className="text-white text-[18px] font-[500] mb-4">Support</h5>
               <ul className="text-gray-400  text-[18px] font-[500] space-y-6">
@@ -110,10 +110,8 @@ export default function Contact() {
               <div>
                 <h5 className="text-white text-[18px] font-[500] mb-4">Help and Solution</h5>
                 <ul className="text-gray-400  text-[18px] font-[500] space-y-7">
-                  <li>Talk to support</li>
-                  <li>Support docs</li>
-                  <li>System status</li>
-                  <li>Covid response</li>
+                  {['Talk to support', 'Support docs', 'System status', 'Covid response'].map((item, index) => (
+                    <li key={index}><a href="">{item}</a></li>))}
                 </ul>
               </div>
               <div>
@@ -129,10 +127,10 @@ export default function Contact() {
           </div>
   
               
-          <p className=" md:mt-8">
+          <p className="mx-7 md:mt-8">
             © 2022 Biccas Inc. Copyright and rights reserved | 
           </p>
-          <p className="md:text-right">Terms and Conditions - Privacy Policy</p>
+          <p className=" mx-7 md:text-right">Terms and Conditions - Privacy Policy</p>
         </footer>
       </section>
     );

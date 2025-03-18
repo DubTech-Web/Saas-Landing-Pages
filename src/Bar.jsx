@@ -28,7 +28,7 @@ const DropdownMenu = () => {
   }, []);
 
   return (
-    <div className="relative md:hidden left-20 sm:left-5" ref={dropdownRef}>
+    <div className="relative md:hidden sm:hidden left-10 sm:left-5" ref={dropdownRef}>
       {/* Button to open dropdown */}
       <button
         onClick={toggleDropdown}
@@ -38,7 +38,7 @@ const DropdownMenu = () => {
 
       {/* Dropdown links */}
       {isOpen &&  (
-        <div className="fixed top-12 left-0 w-full border-t bg-[#54BD95] shadow-lg h-full mt-4">
+        <div className="fixed top-12 left-0 w-full border-t bg-[#54BD95] shadow-lg h-70 mt-4">
           <ul className="flex flex-col items-center py-4 text-gray-700 w-full">
             <li className="text-center">
               <a
@@ -84,25 +84,7 @@ const DropdownMenu = () => {
               >
                 AboutUs
               </a>
-            </li>   
-            <li>
-              <a
-                href="#login"
-                className="block px-4 py-2 text-gray-50 hover:bg-gray-50"
-                onClick={() => setIsOpen(false)}
-              >
-                Login
-              </a>
-            </li> 
-            <li>
-              <a
-                href="#signup"
-                className="block px-4 py-2 bg-gray-500 rounded-3xl shadow-md hover:bg-gray-100"
-                onClick={() => setIsOpen(false)}
-              >
-                SignUp
-              </a>
-            </li>           
+            </li>             
           </ul>
         </div>
       )}

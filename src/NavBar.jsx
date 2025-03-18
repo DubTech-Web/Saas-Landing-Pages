@@ -1,26 +1,35 @@
 import { useState } from "react";
+import DropdownMenu from "./Bar";
 
 const Navbar = () => {
   const navigation = ['Home', 'Product', 'FAQ', 'Blog', 'AboutUs'];
   const [active, setActive] = useState('Home');  // Track active link
 
   return (
-    <nav className="hidden md:flex flex-1  w-[406px] h-[22px]  justify-center space-x-6">
-      {navigation.map((nav, index) => (
-        <a
-          href={nav}
-          key={index}
-          onClick={() => setActive(nav)}  // Set active link on click
-          className={`text-[18px] leading-5 font-[Inter] ${
-            active === nav 
-              ? 'text-black'        // Active link classes
-              : 'text-gray-400 hover:text-blue-500'  // Inactive link classes
-          }`}
-        >
-          {nav}
-        </a>
-      ))}
-    </nav>
+    <header className="w-full py-5 sm:px-10 px-5 flex justify-between items-center bg-gradient-to-r from-emerald-50 from-10% via-pink-50 via-60% to-emerald-100 to-90%   ">
+      <nav className="flex w-full screen-max-width">
+        <h2 className="ml-7 h-8 text-3xl font-bold text-[#54BD95] font-[Inter]">Biccas</h2>
+
+        <div className="flex flex-1 justify-center max-sm:hidden">
+          {navigation.map((nav) => (
+            <div
+            onClick={() => setActive(nav)}
+              key={nav}
+              className="px-5 py-2 text-sm cursor-pointer text-gray-300 hover:text-gray-950 transition-all"
+              {...(nav === active && { style: { color: 'black' } })}  
+            >
+              {nav}
+            </div>
+          ))}
+        </div>
+        <DropdownMenu />
+        
+        <div className="flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1">
+          <button>Login</button>
+          <button className="p-2  font-[Inter] font-[500] text-[16px]  bg-[#54BD95] text-[#F8F8FA] rounded-lg hover:bg-green-600">SignUp</button>
+        </div>
+      </nav>
+    </header>
   );
 };
 
@@ -28,16 +37,4 @@ export default Navbar;
 
 
 
-// export default function NavBar() {
-  
-//   const navigation = ['Home', 'Product', 'FAQ', 'Blog', 'AboutUs'];
-//   return(
-//     <nav className="w-[406px] h-[22px] flex-1 flex justify-center space-x-6">
-//       {navigation.map((nav, index) => (
-//         <a href="#" key={index} className="text-gray-400 hover:text-blue-500 text-[18px] leading-5">
-//           {nav}
-//         </a>
-//       ))}
-//       </nav>
-//   )
-// }
+
